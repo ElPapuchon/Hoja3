@@ -10,8 +10,9 @@ import org.junit.AfterClass;
 import org.junit.Before;
 
 
+// TODO: Auto-generated Javadoc
 /**
- * 
+ * The Class AlgoritmosTest.
  */
 
 /**
@@ -21,13 +22,28 @@ import org.junit.Before;
  */
 public class AlgoritmosTest {
 	
+	/** The test. */
+	// instanciamos una clase de tipo Algoritmos() para hacer las pruebas
 	private Algoritmos test = new Algoritmos();
+	
+	/** The data. */
+	// declaramos la variable con la cuál se realizaran los purebas
 	int data[] = {3,5,1,7};
+	
+	/** The respuesta. */
+	// declaramos la respuesta
 	int respuesta[] = {1,3,5,7};
 	
+	/**
+	 * Instantiates a new algoritmos test.
+	 */
+	// Hacemos el constructor
 	public AlgoritmosTest() {
     }
 	
+    /**
+     * Sets the up class.
+     */
     public static void setUpClass() {
     }
     
@@ -45,6 +61,10 @@ public class AlgoritmosTest {
     public void tearDown() {
     }
 
+	/**
+	 * Selectiontest.
+	 */
+    // probamos el algoritmo selección sort
 	@Test
 	public void Selectiontest() {
 		
@@ -55,6 +75,11 @@ public class AlgoritmosTest {
 		
 		
 	}
+	
+	/**
+	 * Mergetest.
+	 */
+	// probamos el algoritmo Merge sort
 	@Test
 	public void Mergetest() {
 		
@@ -64,6 +89,11 @@ public class AlgoritmosTest {
 		assertArrayEquals(respuesta, (int[]) clon2);
 
 	}
+	
+	/**
+	 * Quick sort.
+	 */
+	// probamos el algoritmo Quick sort
 	@Test
 	public void QuickSort(){
 		
@@ -74,6 +104,11 @@ public class AlgoritmosTest {
 		assertArrayEquals( respuesta,  clon3);
 		
 	}
+	
+	/**
+	 * Radix sort.
+	 */
+	// probamos el algoritmo Radix sort
 	@Test
 	public void RadixSort(){
 		
@@ -84,6 +119,11 @@ public class AlgoritmosTest {
 		assertArrayEquals(respuesta, (int[]) clon4);
 		
 	}
+	
+	/**
+	 * Gnome sort.
+	 */
+	// probamos el algoritmo Gnome sort
 	@Test
 	public void GnomeSort(){
 		
